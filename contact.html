@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Grey+Qo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+AR:wght@100..400&family=Playwrite+HR+Lijeva:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Whisper&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url("https://wallpapercave.com/wp/wp3783201.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-family: "Whisper", cursive;
+            font-weight: bold;
+            font-size: 50px;
+            font-style: normal;
+            padding-left: 30px;
+            filter: drop-shadow(10px 10px 10px black);
+        }
+
+        .navbar-right {
+            color: white;
+        }
+
+        .navbar-right a {
+            text-decoration: none;
+        }
+
+        a {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px;
+            font-family: "Pacifico", cursive;
+            font-weight: 800;
+            font-style: normal;
+            font-size: 20px;
+            color: black;
+        }
+
+        a:hover {
+            background-color: rgb(236, 63, 63);
+            color: rgb(5, 5, 5);
+        }
+
+        .container {
+            min-height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(/wp9166739.webp) no-repeat center/cover;
+        }
+
+        .container form {
+            width: 670px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(30px);
+            flex-wrap: wrap;
+        }
+
+        .container form h1 {
+            color: #fff;
+            font-weight: 700;
+            line-height: 2;
+            margin-top: 20px;
+            width: 500px;
+            text-align: center;
+        }
+
+        .container form input {
+            width: 300px;
+            height: 50px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            font-size: 20px;
+            margin-bottom: 10px;
+            background: none;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+        }
+
+        .container form input::placeholder {
+            color: #fff;
+        }
+
+        .container form #lastName,
+        .container form #mobile {
+            margin-left: 20px;
+        }
+
+        .container form h4 {
+            color: #fff;
+            font-weight: 300;
+            width: 600px;
+            margin-top: 20px;
+        }
+
+        .container form textarea {
+            background: none;
+            border: none;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            font-weight: 200;
+            font-size: 20px;
+            padding: 10px;
+            outline: none;
+            min-height: 90px;
+            max-height: 90px;
+            min-width: 620px;
+            max-width: 620px;
+        }
+
+        .container form h4 {
+            font-size: 20px;
+        }
+
+        .container form #button {
+            border: none;
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 24px;
+            color: #000;
+            width: 200px;
+            height: 60px;
+            padding: 0;
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+
+        .container form #button:hover {
+            background: #000;
+            color: #fff;
+            transition: .5s ease-in-out;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container1 {
+            min-height: 10vh;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons img {
+            margin-right: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navbar">
+        <h1 class="nav-logo"><span style="color: rgb(255, 0, 0);">Melting</span> Moments</h1>
+        <div class="navbar-right">
+            <a class="a-element" href="index.html">HOME</a>
+            <a class="a-element" href="about.html">ABOUT</a>
+            <a class="a-element" href="menu.html">MENU</a>
+            <a class="a-element" href="contact.html">CONTACT US</a>
+        </div>
+    </section>
+    <div class="container">
+        <form id="contactForm" action="https://formspree.io/f/mjgpgeqg" method="POST">
+            <h1>Contact Us Form</h1>
+
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required />
+
+            <input type="email" id="email" name="email" placeholder="Email" required />
+            <input type="text" id="mobile" name="mobile" placeholder="Mobile" required />
+
+            <h4>Type Your Message Here...</h4>
+            <textarea name="message" placeholder="Enter your message..." required></textarea>
+
+            <input type="submit" value="Send" id="button" />
+        </form>
+    </div>
+    <footer>
+        <div class="container1">
+            <p style="padding: 20px;">&copy; 2024 Melting Moments. All Rights Reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("pageshow", function () {
+                document.getElementById("contactForm").reset();
+            });
+        </script>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
